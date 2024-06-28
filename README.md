@@ -6,3 +6,6 @@ the data set used for this project was collected from Kaggle https://www.kaggle.
 gender, age, hypertension, heart_disease, ever_married, work_type, Residence_type, avg_glucose, BMI(body mass index), smoking status
 # Methods
 I used the logistic Regression machine learning algorithm to develop the prediction model. The algorithm was trained on 80% of the dataset and tested on 20%.
+Feature selection was performed on the dataset to get the best features which are the new features is 'age', 'hypertension', 'heart_disease', 'ever_married', 'avg_glucose_level' on which the dataset was trained
+# Results
+the model achieved an accuracy score of 93.93%
