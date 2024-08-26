@@ -1,5 +1,5 @@
 # stroke-prediction
-This Repository contains code and data for predicting stroke outcomes using a machine learning algorithm. the goal is to develop a machine learning algorithm that can successfully predict the likelihood  of a patient experiencing cancer given their medical history and current health status, age and smoking condition
+This Repository contains code and data for predicting stroke outcomes using a machine learning algorithm. the goal is to develop a machine learning algorithm that can successfully predict the likelihood  of a patient experiencing stroke given their medical history and current health status, age and smoking condition
 # Data
 the data set used for this project was collected from Kaggle https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset.
 # Features
