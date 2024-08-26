@@ -1,7 +1,12 @@
 # stroke-prediction
-This Repository contains code and data for predicting stroke outcomes using a machine learning algorithm. the goal is to develop a machine learning algorithm that can successfully predict the likelihood  of a patient experiencing stroke given their medical history and current health status, age and smoking condition
+This project aims to build a predictive model to predict the likelihood of a patient having stroke based on some health parameters.
+# Overview:
+Stroke is one of the leading causes of death around the world today, and early prediction is very importantfor timely medical intervention. This project leverages machine learning techniques to predict the likelihood of a stroke based on a dataset that includes various health metrics like age, hypertension, heart disease, and more.
+The objective is to provide a tool that can help healthcare professionals and researchers understand the key risk factors associated with strokes and predict the risk effectively.
 # Data
-the data set used for this project was collected from Kaggle https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset.
+the data set used for this project was collected from Kaggle https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset. it includes the following features:
+
+
 # Features
 gender, age, hypertension, heart_disease, ever_married, work_type, Residence_type, avg_glucose, BMI(body mass index), smoking status
 # Methods
