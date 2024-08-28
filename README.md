@@ -21,16 +21,43 @@ the data set used for this project was collected from Kaggle https://www.kaggle.
 # Data Preprocessing
 ### Data cleaning
 the bmi column contains null values, the fillna techniques was used to replace missing values with the mean.
+convert the categorical column to category and find the statistics of the numerical features.
+# Exploratory Data Analysis
+age was further grouped into:
+Adolescence 15-19
+Young Adult 20-39
+Adult 40-64
+middle Age 65-74
+older 75..
+from the grouping individuals who are grouped into adolescence do not have stroke both male and female while individuals who fall into the group of older adults have high number of stroke patients
+the correlation between avg_glucose, bmi and age was plotted using scatterplot to discover the relationship between this numerical features and i discovered that there is more people in middle age and older have high glucose level
+
+# Feature Engineering
 ### Label Encoding
-Label Encoder is used to convert categorical data in the dataset to numerical values that can be unserstood by machine learning algorithms, the labels include:
+Label Encoder is used to convert categorical data in the dataset to numerical values that can be undserstood by machine learning algorithms, the labels include:
 1. gender: "Male", "Female" or "Other"
 2. ever_married: "No" or "Yes"
 3. work_type: "children", "Govt_jov", "Never_worked", "Private" or "Self-employed"
 3. Residence_type: "Rural" or "Urban"
 3. smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown"*
+## Feature selection
+the best features are selected using the selectKbest library in sklearn, the chi2 was passed as the score function to determine the best features
 
-# Methods
-I used the logistic Regression machine learning algorithm to develop the prediction model. The algorithm was trained on 80% of the dataset and tested on 20%.
-Feature selection was performed on the dataset to get the best features which are the new features is 'age', 'hypertension', 'heart_disease', 'ever_married', 'avg_glucose_level' on which the dataset was trained
+# Modelling
+the data was split into train and test data with 20% for test and a randomstate of 42
+## models:
+1. Random Forest Classifier: achieved a accuracy of 94 precent
+2. Logistic Regression achived a accuracy of 94 percent
+3. K nearest Neighbor: achieved a accuracy of 94 percent
+4. Support vector machine: achieved a accuracy of 94 percent
+## overfitting:
+i used the learning curve to check for overfitting in each model
+from the learning curve for random forest classifier the is overfitiing as the train score is higher than the test score
+
 # Results
-the model achieved an accuracy score of 93.93%
+I choose the Logistic Regression model
+it is fast and simple for binary classification problem
+the model is able to generalize well
+it is resource less intensive
+
+
